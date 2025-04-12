@@ -74,8 +74,10 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/James43289009?mx=2"
 
-disqus:
-  shortname: jjmtaylor
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "jjmtaylor"
 
 defaults:
   # _posts
