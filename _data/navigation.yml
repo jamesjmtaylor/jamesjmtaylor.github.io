@@ -4,8 +4,8 @@ main:
   # TODO: Add these back after categories and tags have been added to the post headers
   # - title: "Categories"
   #   url: /categories/
-  # - title: "Tags"
-  #   url: /tags/
+  - title: "Tags"
+    url: /tags/
   - title: "About"
     url: /about/
   - title: "Privacy Policy"

@@ -53,6 +53,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-seo-tag
 
 author:
   avatar : "/assets/avatar.jpg"
@@ -102,6 +103,6 @@ defaults:
 # category_archive:
 #   type: liquid
 #   path: /categories/
-# tag_archive:
-#   type: liquid
-#   path: /tags/
+tag_archive:
+  type: liquid
+  path: /tags/
