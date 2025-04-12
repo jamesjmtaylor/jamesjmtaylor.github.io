@@ -1,6 +1,7 @@
 ---
 title: After Action Review (AAR)
 date: 2017-03-01T04:53:40-08:00
+tags: aar android
 ---
 ![After Action Review](/assets/aar.jpg)
 
@@ -8,7 +9,7 @@ In the Army we conducted a formal retrospective after every operation that we co
 
  Since leaving the Army I've carried on the habit of After Action Reviews. After every two week Sprint at Steelcase I summarize the most important lessons learned over the last two weeks in my notebook.  My plan going forward is transcribe the best lessons learned from my notebook into my blog every two months. The lessons learned will be in the form of bullet points that I wish I had known prior to undertaking the work involved in the Sprint.  If you're not interested in my more technical musings, feel free to skip over these.  Otherwise, I hope your able to glean a few helpful tidbits here and there.  
 
-This review iteration's topic is Android.  Without further adieu: 
+This review iteration's topic is Android.  Without further adieu:
 
 * The android emulator can't directly connect to localhost, instead use "http://10.0.2.2"
 * The android emulator is actually configured as an x86 architecture to increase compilation speed since it cuts out the translation from a CISC architecture to a RISC architecture.  This means it's actually a simulator, since Android devices generally employ ARM architecture.

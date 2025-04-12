@@ -1,6 +1,7 @@
 ---
 title: Day 13-iOS Advanced
 date: 2016-09-20T12:30:56.000Z
+tags: coding-bootcamp
 ---
 ![Day 13](/assets/day13.jpeg)
 

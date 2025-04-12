@@ -1,6 +1,7 @@
 ---
 title: Complete Code Coverage
 date: '2020-08-01T11:53:00-07:00'
+tags: software-engineering
 ---
 ![Tiger tank](/assets/tiger.jpg)
 
@@ -26,9 +27,9 @@ I have a bit of a confession to make: I'm something of a [Quora](https://www.quo
 
 Which got me thinking about industry best practices in general.  The picture above is of the infamous German Tiger tank.  They were the pinnacle of tank technology in WW2, and approximately 1,300 were produced before the end of the war.  In contrast the American main battle tank, the M4 Sherman, had over 49,000 produced.  The American tank was widely considered to be a death trap; an iron coffin.  American tankers with gallows humor called it the "Zippo" because it "lights up every time."  Despite its shortcomings compared to the Tiger tank, The M4 Sherman ultimately ended up winning the war (alongside the T-34, Russia's equivalent, of which 80,000 were produced).  The reason that so few Tiger tanks were produced was because of their mechanical complexity and precision engineering.  Many parts had to be individually machined to incredibly narrow tolerances.  The Russian and American tanks in contrast often used a combination of cast iron hulls and welded plates, dramatically reducing production times.  They weren't completely absent of machined parts, but their designs made due with a great deal less of them.
 
-All this is exposition is just a long-winded pre-amble to the main topic of today's blog, code coverage.  For the uninitiated, code coverage is a percentage figure of how much of your code base is executed when you run your unit tests.  A lot of development organizations see 100% as the gold standard for unit testing.  The problem with this approach is three-fold. 
+All this is exposition is just a long-winded pre-amble to the main topic of today's blog, code coverage.  For the uninitiated, code coverage is a percentage figure of how much of your code base is executed when you run your unit tests.  A lot of development organizations see 100% as the gold standard for unit testing.  The problem with this approach is three-fold.
 
-The first issue is that 100% code coverage generally makes you do some pretty silly things to get every last scrap of code under coverage, i.e. "Does this onCreate() method get executed?"  The reason this is a silly test is because the framework automatically executes onCreate() when you instantiate the activity, regardless of what the rest of your code does.  The test will always pass.  If it were to fail, it would mean that something was broken with the framework, and that not only is your program broken, but that tens of thousands of other programs that rely on the framework are broken as well. 
+The first issue is that 100% code coverage generally makes you do some pretty silly things to get every last scrap of code under coverage, i.e. "Does this onCreate() method get executed?"  The reason this is a silly test is because the framework automatically executes onCreate() when you instantiate the activity, regardless of what the rest of your code does.  The test will always pass.  If it were to fail, it would mean that something was broken with the framework, and that not only is your program broken, but that tens of thousands of other programs that rely on the framework are broken as well.
 
 The second issue is that it takes time to write unit tests.  Anyone who tells you otherwise is a bold-faced liar.  They may save you time in aggregate when you factor in the regression bugs that you prevent, or the ability to iterate quickly with red-green Test-Driven Development (TDD).  But in the short run they do take time to implement and execute.  If you don't invest the limited amount of time that you have in order to maximize your cost-to-benefit ratio, you're wasting time.  Especially given the implications of the first issue.
 

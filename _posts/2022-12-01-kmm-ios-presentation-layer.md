@@ -1,14 +1,15 @@
 ---
-title: KMM iOS Presentation layer
+title: KMP iOS Presentation layer
 date: '2022-12-01T07:39:00-08:00'
+tags: kmp ios kotlin
 ---
 ![Desert](/assets/desert.jpg)
 
-This is the last entry in a multi-part series on Kotlin Multiplatform Mobile.
+This is the last entry in a multi-part series on Kotlin Multiplatform.
 
-Today I will cover implementation of the SwiftUI user interface for the iOS app.  I'm using the Army's brand new [ODIN API ](https://odin.tradoc.army.mil/WEG) for a reboot of my WEG iOS and Android applications.  The ODIN API provides in-depth information about a wide array of military equipment.  I'm going to try and cut the code snippets down to only the most salient bits in order to keep this post's size a little more manageable.  Because of that, I'd encourage you to open the [repository](https://github.com/jamesjmtaylor/weg-kmm) in a second pane to provide context to the snippets as needed. 
+Today I will cover implementation of the SwiftUI user interface for the iOS app.  I'm using the Army's brand new [ODIN API ](https://odin.tradoc.army.mil/WEG) for a reboot of my WEG iOS and Android applications.  The ODIN API provides in-depth information about a wide array of military equipment.  I'm going to try and cut the code snippets down to only the most salient bits in order to keep this post's size a little more manageable.  Because of that, I'd encourage you to open the [repository](https://github.com/jamesjmtaylor/weg-kmm) in a second pane to provide context to the snippets as needed.
 
-When I started work on implementing the KMM repository layer it was under the assumption that both Android and iOS had their own native pagination.  For Android this assumption was correct, and I was able to use the [Android Jetpack Paging Library](https://developer.android.com/topic/libraries/architecture/paging/v3-overview).  iOS, unfortunately, doesn't have a native pagination library.  As I started down the path of writing my pagination logic I very quickly got frustrated that I was creating duplicate logic across the two platforms.  So I did a little digging and found a [KMM multiplatform paging library](https://github.com/kuuuurt/multiplatform-paging).  This library was built to support the Jetpack Paging library out of the box, so very little needed to change for my pre-existing Android implementation.  For iOS I just needed to wrap the data in a CommonFlow object, as shown below:
+When I started work on implementing the KMP repository layer it was under the assumption that both Android and iOS had their own native pagination.  For Android this assumption was correct, and I was able to use the [Android Jetpack Paging Library](https://developer.android.com/topic/libraries/architecture/paging/v3-overview).  iOS, unfortunately, doesn't have a native pagination library.  As I started down the path of writing my pagination logic I very quickly got frustrated that I was creating duplicate logic across the two platforms.  So I did a little digging and found a [KMP multiplatform paging library](https://github.com/kuuuurt/multiplatform-paging).  This library was built to support the Jetpack Paging library out of the box, so very little needed to change for my pre-existing Android implementation.  For iOS I just needed to wrap the data in a CommonFlow object, as shown below:
 
 ```
     val landPager = Pager(
@@ -156,6 +157,6 @@ struct EquipmentLazyVGrid: View {
 
 By now I'm sure you've noticed a lot of similarities between the components in Jetpack Compose and SwiftUI.  They both even have a Lazy Vertical Grid, with LazyVerticalGrid for Android and LazyVGrid for iOS!  That being said, I did find it marginally easier to reason about SwiftUI. Swift simply doesn't have to deal with all the backstack baggage that Android does.  Creating the routes, destinations, NavHosts, and NavControllers that I did in Jetpack Compose wasn't necessary in SwiftUI.  Instead, view relationships were handled implicitly and elegantly.  I'm sure there are instances when you might want the extra flexibility afforded by Android explicit implementation, but as far as this project is concerned, it's just more stuff to potentially screw up.
 
-I learned a lot during the creation of this app.  KMM as a framework has advanced by leaps and bounds since I first started playing with it at Kotlin Conf 2018.  While the project [was still in Beta as of this writing](https://blog.jetbrains.com/kotlin/2022/10/kmm-beta/), I'm confident it won't be long before the final stable version is released.
+I learned a lot during the creation of this app.  KMP as a framework has advanced by leaps and bounds since I first started playing with it at Kotlin Conf 2018.  While the project [was still in Beta as of this writing](https://blog.jetbrains.com/kotlin/2022/10/kmm-beta/), I'm confident it won't be long before the final stable version is released.
 
 Photo by <a href="https://unsplash.com/@yuli_superson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Juli Kosolapova</a> on <a href="https://unsplash.com/s/photos/desert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

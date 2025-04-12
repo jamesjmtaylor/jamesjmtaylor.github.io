@@ -1,6 +1,7 @@
 ---
 title: Stairway to Heaven of Front-End Developers
 date: 2017-10-01T04:49:38-07:00
+tags: software-engineering web
 ---
 ![Stairway to Heaven](/assets/stairway.jpg)
 

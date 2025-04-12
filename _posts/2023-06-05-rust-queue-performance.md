@@ -1,6 +1,7 @@
 ---
 title: Rust Queue Performance
 date: '2023-06-05T06:12:42-07:00'
+tags: algorithms rust
 ---
 ![null](/assets/rustqueue.jpg)
 

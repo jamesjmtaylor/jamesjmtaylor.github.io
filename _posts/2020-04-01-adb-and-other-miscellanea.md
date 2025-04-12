@@ -1,6 +1,7 @@
 ---
 title: ADB and other Miscellanea
 date: '2020-04-01T08:11:25-07:00'
+tags: android
 ---
 ![Swinging footbridge](/assets/bridge.jpg)
 
@@ -12,7 +13,7 @@ You can extract an apk from the device by executing `adb pull /path/to/apk`. Any
 
 On our SBCs it was initially necessary to circumvent the system-level permissions in order to access the device’s serial bus.  This was because USB (Universal Serial Bus) access is a user-level permission, but general serial bus access is a system-level permission and not normally accessible to the user.  Because Android is at its heart a Linux OS, I could accomplish this by escalating my ADB permissions to root and using `shell` to execute privileged requests. This was done with the following commands:
 
-```
+```shell
 adb root 
 adb shell setenforce 0 
 adb shell chmod 777 /dev/ttyS4
@@ -22,7 +23,7 @@ While on the topic of permissions, a distinction should be made between Internal
 
 Communications between android processes and activities  like permission requests normally occur through intents.  Occasionally it is necessary to trigger our applications from the terminal with specific intents and intent extras.  We accomplished this with commands like the one below:
 
-```
+```shell
 adb shell am start -a android.intent.action.MAIN --es machineType "BIKE" -n com.nautilus.app/com.nautilus.ui.view.activity.MainActivity
 ```
 

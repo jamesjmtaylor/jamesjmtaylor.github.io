@@ -1,6 +1,7 @@
 ---
 title: Coding Dojo
 date: 2016-09-05T13:21:29.000Z
+tags: coding-bootcamp
 ---
 ![Cyber sub-zero](/assets/cyber.jpg)
 

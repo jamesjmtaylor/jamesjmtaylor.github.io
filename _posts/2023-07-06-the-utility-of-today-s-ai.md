@@ -1,6 +1,7 @@
 ---
 title: The Utility of Today's AI
 date: '2023-07-06T06:18:39-07:00'
+tags: ai 
 ---
 ![I for one welcome our new robot overlords.](/assets/robotoverlord.png)
 

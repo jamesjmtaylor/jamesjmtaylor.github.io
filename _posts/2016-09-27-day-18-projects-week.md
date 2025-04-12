@@ -1,6 +1,7 @@
 ---
 title: Day 18-Projects Week
 date: 2016-09-27T05:39:54-07:00
+tags: coding-bootcamp
 ---
 ![Day 18](/assets/day18.jpg)
 

@@ -1,12 +1,13 @@
 ---
 title: AAR pt 15 (Architecture/Software Engineering)
 date: '2019-10-05T09:41:08-07:00'
+tags: software-engineering
 ---
 ![Blueprint](/assets/blueprint.jpg)
 
 If you haven’t had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a>
 
-Given that my last post was about my architecture certification, I figured this would be a good time to do another post on some architecture concepts. This is the second architecture lessons learned post that I've done; <a href="/post/aar-pt-8-architecture-software-engineering/">you can find the first one here</a>. 
+Given that my last post was about my architecture certification, I figured this would be a good time to do another post on some architecture concepts. This is the second architecture lessons learned post that I've done; <a href="/post/aar-pt-8-architecture-software-engineering/">you can find the first one here</a>.
 
 * The idea of debouncing is that you artificially limit multiple, similar requests by a client, only sending a new request every X seconds.  Libraries like RxSwift and RxJava have debouncer functions built in.
 * Most MVC server frameworks handle exceptions by return a 500 error code and a stack trace, recovering gracefully.  
@@ -15,7 +16,7 @@ Given that my last post was about my architecture certification, I figured this 
 * When you override "Equals()" you must override "Hash()" as well, otherwise you can have duplicate objects in HashSets.
 * Reachability is the ability of a device to 'reach' the internet.  Connectivity is the ability of a device to 'connect' to a particular service.  You can potentially 'reach' the internet but not connect to anything if your router is functioning but is not resolving domains.  This might happen if a user connects their device to their home wifi but their internet service provider is experiencing a localized outage.
 * In Android you use ConnectivityService to determine if you are connected to the internet.  In iOS you use ReachabilityService.
-* If possible use a library to serialize and deserialize rather doing it by hand.  The latter course of action is error prone and often leads to inconsistencies. 
+* If possible use a library to serialize and deserialize rather doing it by hand.  The latter course of action is error prone and often leads to inconsistencies.
 * In functional programming ".map" applies a function to each element of a collection.  ".flatmap" executes a reduce step and then applies the function.
 * Never assume the image encoding standards of your server. As an example some servers use base64 encoding, while others might use UTF8, leading to conflicts.
 * Be VERY conscious of decisions to use static variables vs dependency injection.  Usually static variables have long-term repercussions.

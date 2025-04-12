@@ -1,6 +1,7 @@
 ---
 title: Day 7-iOS Intermediate
 date: 2016-09-13T12:08:38.000Z
+tags: coding-bootcamp
 ---
 ![Day 7](/assets/day7.jpg)
 

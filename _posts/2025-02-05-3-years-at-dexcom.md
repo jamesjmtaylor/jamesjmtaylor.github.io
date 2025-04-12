@@ -1,6 +1,7 @@
 ---
 title: 3 years at Dexcom!
 date: '2025-02-05T08:40:02-08:00'
+tags: life 
 ---
 ![Dexcom Logo](/assets/dexcom.jpg)
 

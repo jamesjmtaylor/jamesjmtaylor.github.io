@@ -1,6 +1,7 @@
 ---
 title: Juggling Life
 date: '2022-03-05T07:12:40-08:00'
+tags: life
 ---
 ![Juggling](/assets/juggling.jpg)
 

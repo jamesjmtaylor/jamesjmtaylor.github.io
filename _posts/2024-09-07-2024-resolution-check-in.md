@@ -1,6 +1,7 @@
 ---
 title: 2024 Resolution Check-In
 date: '2024-09-07T07:27:50-07:00'
+tags: resolutions
 ---
 I've been pretty busy lately, so I figured it would be a good time to do a new year's resolution check-in. If you haven't read my 2024 resolutions post [you can do so here](https://jjmtaylor.com/2024-resolutions), but to recap I had three primary goals:
 

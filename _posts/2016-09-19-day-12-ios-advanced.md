@@ -1,6 +1,7 @@
 ---
 title: Day 12-iOS Advanced
 date: 2016-09-19T12:29:18.000Z
+tags: coding-bootcamp
 ---
 ![Day 12](/assets/day12.jpeg)
 

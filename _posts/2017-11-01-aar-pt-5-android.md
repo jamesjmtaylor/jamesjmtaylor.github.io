@@ -1,6 +1,7 @@
 ---
 title: AAR pt 5 (Android)
 date: 2017-11-01T12:20:03.000Z
+tags: android aar kotlin
 ---
 ![Android](/assets/android.png)
 
@@ -15,14 +16,14 @@ If you haven't had a chance to read the first entry in the series for context, [
 * As of API 27 you must explicitly declare a notification channel for each notification, otherwise you will receive a "Developer warning for package com.google.android.apps.messaging" toast.  Because this is an SDK 27 and later issue, you must encapsulate your notification channel declaration in a "`if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {`"conditional block.
 * The HttpURLConnection from the java.net library has a defect where PATCH commands are not correctly handled.  OpenJDK has labeled this as [a "Won't Fix" bug](https://bugs.openjdk.java.net/browse/JDK-7016595).  Because of this, it's recommended that you use the OKHTTP library instead, which has better mocking support for unit testing anyway. 
 * When you add actions to a notification, the only way to tell them apart is to assign the intent associated with each action an \`action\` string.  This is because intent extras are shared between all the actions and the notification itself.
-* The `final `key word means that you can't change the variable within it's scope.  This does mean that it's fine to use within loops.
+* The `final` key word means that you can't change the variable within it's scope.  This does mean that it's fine to use within loops.
 * Since 2015 Google has had a Data-Binding Library that allows your xml to have fields that are direct observers of whatever java attributes you declare in the xml.  It's not commonly used however due to the added complexity it lends to XMLs over the more traditional 'findViewById' approach.
 * The closest analogue Android has to an iOS stackView is it's LinearLayout
 * You cannot use .svg's directly.  Instead, save them to your Desktop and use Android Studio to create a new .svg image asset by right-clicking on the "drawables" package.
 * Vector graphics in Android are only supported in OS 21 and up.
 * You can use vector graphics for an imageButton, just set the background tint to be the clear color.
 * You can auto-generage methods with the **CMD+N**.
-* **CMD+N **> **Override **allows you to autogenerate any public/protected method your class extends or implements.
+* **CMD+N > Override** allows you to autogenerate any public/protected method your class extends or implements.
 * You can delcare an onClickListener for a button in a seperate function and then just set that button's onClickListener to the function in onCreateView, making it cleaner.
 * ActionBar/Toolbar menu items are the same as the iOS navigationBar buttons, just set toDisplay="Always" in xml
 * The Android toolbar can be assigned a custom xml just like any other element.  In it you can change the buttons, background colors, etc.  Just replace the toolbar in the activity layout file with your own and change it's own children.

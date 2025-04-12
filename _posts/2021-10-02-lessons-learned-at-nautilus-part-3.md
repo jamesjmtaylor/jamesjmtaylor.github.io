@@ -1,6 +1,7 @@
 ---
 title: Lessons Learned at Nautilus (Part 3)
 date: '2021-10-02T09:22:43-07:00'
+tags: life android ble
 ---
 ![Droid](/assets/droid.png)
 

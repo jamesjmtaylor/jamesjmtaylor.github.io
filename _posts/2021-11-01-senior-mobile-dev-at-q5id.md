@@ -1,6 +1,7 @@
 ---
 title: Senior Mobile Dev at Q5id
 date: '2021-11-01T05:52:06-07:00'
+tags: life xamarin c#
 ---
 ![Fingerprint](/assets/fingerprint.jpg)
 

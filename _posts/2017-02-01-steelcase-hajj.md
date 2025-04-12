@@ -1,6 +1,7 @@
 ---
 title: Steelcase Hajj
 date: 2017-02-01T20:04:40.407Z
+tags: life
 ---
 ![Steelcase factory](/assets/factory.jpg)
 

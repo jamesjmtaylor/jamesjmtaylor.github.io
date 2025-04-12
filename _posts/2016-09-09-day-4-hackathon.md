@@ -1,6 +1,7 @@
 ---
 title: Day 4-Hackathon
 date: 2016-09-09T11:54:00.000Z
+tags: coding-bootcamp
 ---
 ![Day 4](/assets/day4.jpg)
 

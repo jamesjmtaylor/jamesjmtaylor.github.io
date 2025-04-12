@@ -1,6 +1,7 @@
 ---
 title: Interviews
 date: '2020-02-01T09:02:32-08:00'
+tags: life
 ---
 ![Interview](/assets/interview.jpg)
 
@@ -16,13 +17,13 @@ Seattle Startup Week was a large source of interview opportunities for me.  At o
 
 His reasoning for risk aversion was simple.  Startups are small in the beginning, usually not more than 3 or 4 people in size.  Hiring the wrong person could compromise the prospects of the entire company, smothering the aspirations of the founders before they even had a chance to succeed.  
 
-The breadth of interview styles that I faced as a candidate was as diverse as the companies that I applied to.  Most required that I interview on-site after passing an initial phone screen.  Some exclusively did phone interviews.  Others had take-home assignments.  Still others did online code tests.  A couple were as brief as a short conversation and a handshake.  Despite the differences, there was a common thread between all of them. Could I be trusted? 
+The breadth of interview styles that I faced as a candidate was as diverse as the companies that I applied to.  Most required that I interview on-site after passing an initial phone screen.  Some exclusively did phone interviews.  Others had take-home assignments.  Still others did online code tests.  A couple were as brief as a short conversation and a handshake.  Despite the differences, there was a common thread between all of them. Could I be trusted?
 
 Smaller companies more often than not sought to confirm that trust by probing my honesty and likability. This was because they usually lacked the in-house technical expertise that I specialized in.   Moderately sized companies were more likely to have at least one individual familiar with my field. Questions in these interviews would focus on making sure I was up to date on current practices so I could hit the ground running.  Larger software companies , rather than becoming even more specialized, actually focused on my grasp of computer science fundamentals in general.  This usually meant white-boarding algorithms, data structures, and design patterns.  
 
 Each interviewing approach had its benefits and drawbacks.  As with any new experience, I got better at the various interview styles with lots of practice. The mistakes I made became scarred into my memory, and I never made same mistake twice.  Eventually, I had accumulated enough "scar tissue" to regularly secure offers in any of the interview types.
 
-Since then I've spent an equal amount of time on the other side of the table as an interviewer.  26 interviews for candidates that would work directly for me.  Dozens of others for those that would work in parallel teams within our company.  In each case the objective has remained the same:  Could I trust them? Trust them to hit the ground running, put in their hours, work well with others, and require a minimum of hand-holding?   
+Since then I've spent an equal amount of time on the other side of the table as an interviewer.  26 interviews for candidates that would work directly for me.  Dozens of others for those that would work in parallel teams within our company.  In each case the objective has remained the same:  Could I trust them? Trust them to hit the ground running, put in their hours, work well with others, and require a minimum of hand-holding?
 
 Developers are given only a limited amount of time to make a decision about the candidate they interview.  For the majority of the interviews I've been limited to a 30 minute phone screen and a 30-60 minute in-person interview with the candidate.  For the phone screen I've generally focused on what I call "pub  trivia".  That is, questions about their familiarity with libraries for concurrency, databases, and networking as well as tools for debugging. source control, and project tracking. In my opinion the phone screen is a great opportunity to get these questions out of the way.  Doing so allows you to maximize your time observing the personal behaviors of the candidate during the on-site as they work, rather than going through questions of rote memorization.  
 

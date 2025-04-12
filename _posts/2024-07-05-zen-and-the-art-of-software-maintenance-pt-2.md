@@ -1,6 +1,7 @@
 ---
 title: Zen and the Art of Software Maintenance pt 2
 date: '2024-07-05T09:12:12-07:00'
+tags: software-engineering philosophy
 ---
 ![Motorcycle Maintenance](/assets/maintenance.jpg)
 

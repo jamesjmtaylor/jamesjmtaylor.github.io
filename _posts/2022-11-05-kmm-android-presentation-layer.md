@@ -1,12 +1,13 @@
 ---
-title: KMM Android Presentation layer
+title: KMP Android Presentation layer
 date: '2022-11-05T08:45:21-07:00'
+tags: kmp android kotlin
 ---
 ![Stormy beach](/assets/compose.jpg)
 
-This is the second to last entry in a multi-part series on Kotlin Multiplatform Mobile.  This entry will cover implementation of a Jetpack Compose UI for the Android app.  I'm using the Army's brand new [ODIN API ](https://odin.tradoc.army.mil/WEG) for a reboot of my WEG iOS and Android applications.  The ODIN API provides in-depth information about a wide array of military equipment.  
+This is the second to last entry in a multi-part series on Kotlin Multiplatform.  This entry will cover implementation of a Jetpack Compose UI for the Android app.  I'm using the Army's brand new [ODIN API](https://odin.tradoc.army.mil/WEG) for a reboot of my WEG iOS and Android applications.  The ODIN API provides in-depth information about a wide array of military equipment.  
 
-The first step in implementing the compose UI was creating the Jetpack ViewModel for the view to integrate with the KMM shared module.  The ViewModel extends the AndroidViewModel superclass so that it has access to the application context necessary to instantiate the SQLDelight database driver. 
+The first step in implementing the compose UI was creating the Jetpack ViewModel for the view to integrate with the KMP shared module.  The ViewModel extends the AndroidViewModel superclass so that it has access to the application context necessary to instantiate the SQLDelight database driver. 
 
 ```
 class EquipmentViewModel(app: Application): AndroidViewModel(app) {

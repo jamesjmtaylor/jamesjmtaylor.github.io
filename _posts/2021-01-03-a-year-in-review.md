@@ -1,6 +1,7 @@
 ---
 title: A Year in Review
 date: '2021-01-03T08:19:38-08:00'
+tags: resolutions
 ---
 ![Plague Inc. game poster](/assets/plague.png)
 

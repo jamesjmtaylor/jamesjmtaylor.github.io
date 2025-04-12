@@ -1,6 +1,7 @@
 ---
 title: Day 1-iOS Fundamentals
 date: 2016-09-06T20:20:32.000Z
+tags: coding-bootcamp
 ---
 ![Day 1](/assets/day1.jpeg)
 

@@ -1,6 +1,7 @@
 ---
 title: 3D Printing Rennaisance
 date: '2021-02-01T12:31:00-08:00'
+tags: life
 ---
 ![3d printer enclosure](/assets/enclosure.jpg)
 

@@ -1,21 +1,22 @@
 ---
 title: AAR pt 13 (Bluetooth)
 date: '2019-06-01T08:32:00-07:00'
+tags: ble android aar
 ---
 ![Bluetooth icon](/assets/bluetooth-icon.png)
 
-If you have not had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a> 
+If you have not had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a>
 
 Since I've been at Nautilus I've had to work with Bluetooth and the Internet of Things more closely than I have in any other point in my career.  To make sure that I could speak at least somewhat cogently about the topics I've done a fair amount of study into both.  This post focuses on my learnings about Bluetooth specifically.
 
 * Bluetooth is analogous to a wired connection.  Only one smartphone can be actively connected to a Bluetooth device at a time.
 * A Bluetooth profile is a standardized type of device communication.  Keyboard, mouse, and speakers are all examples of standard Bluetooth profiles.  There are 28 profiles in total.  You can opt to not use a standard Bluetooth profile in developing your device, but that means that only your applications will be able to interface with that device.
-* Until Android P you could only connect to one device per Bluetooth profile.  Even with Android P you can only stream data to one connected device per profile. 
+* Until Android P you could only connect to one device per Bluetooth profile.  Even with Android P you can only stream data to one connected device per profile.
 * The android BLE interface uses error codes in its ScanCallback API to report common errors.  Codes include 1 (scan already started) 2 (app not registered) 3 (feature unsupported) and 4 (internal error).
 * In Android you can only scan for Bluetooth LE devices or scan for Classic Bluetooth devices. You cannot scan for both Bluetooth LE and classic devices at the same time.
 * You can debug raw Bluetooth scanning in Android studio with the command "adb shell dumpsys -l" to see Bluetooth services and then execute "adb shell dumpsys bluetooth-manager" to see all the available debugging information.
 * All interactions with Bluetooth devices are through Android's BluetoothAdapter class.  BluetoothProfiles also expose Headset, A2DP, and HDP.
-* Bluetooth has the following advantages over wifi: 
+* Bluetooth has the following advantages over wifi:
 
 1. It emits weak signals.  This means that it consumes an order of magnitude less energy and has significantly less interference.
 2. Bluetooth signals, once paired, use frequency hopping to reduce interference even further.  This also indirectly makes Bluetooth connections more secure.  In the Army we used frequency hop on our HF radios for roughly the same purpose; it increased jamming resistance and made broadcasts more difficult to intercept.

@@ -89,6 +89,8 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      words_per_minute: 100
+      enable_copy_code_button: true
       comments: true
       share: true
       related: true
@@ -99,10 +101,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-# TODO: Add these back after categories and tags have been added to the post headers
-# category_archive:
-#   type: liquid
-#   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/

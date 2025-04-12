@@ -1,6 +1,7 @@
 ---
 title: The Squash Merge
 date: '2024-08-10T08:55:16-07:00'
+tags: software-engineering
 ---
 ![Squash Merge Flow](/assets/squashmerge.png)
 

@@ -1,10 +1,11 @@
 ---
 title: Jetpack Compose Lessons Learned
 date: '2024-02-04T16:11:37-08:00'
+tags: android 
 ---
 ![Winter Landscape](/assets/winterlandscapejpeg.jpeg)
 
-Over the past couple months I've had the opportunity to refactor large swaths of our app user interface from XML to jetpack compose.  Throughout the process I've come to gain an appreciation for some of the sharp edges that jetpack compose still has as February 2024.  My hope is that by reading this blog post you might avoid cutting yourself on the currently jagged APIs of compose, at least in the same places that I did. 
+Over the past couple months I've had the opportunity to refactor large swaths of our app user interface from XML to jetpack compose.  Throughout the process I've come to gain an appreciation for some of the sharp edges that jetpack compose still has as February 2024.  My hope is that by reading this blog post you might avoid cutting yourself on the currently jagged APIs of compose, at least in the same places that I did.
 
 One of the more painful experiences was the conversion of our app's form fields.   Each field required independent validation logic, as well as collective form validation that determined whether the user was allowed to progress to the next screen.  In the first implementation of the refactor I relied on state hoisting to allow us to simply re-use the validation logic in our viewmodels.  This worked great on our debug builds.  Unfortunately we found that once obfuscation was applied the responsiveness of the fields to user input was crippled.  For every ten keystrokes a single character might appear.  To their credit, [Google admits the TextField widget shortcomings and has recommended maintaining state and validation logic as close to the composable as possible](https://medium.com/androiddevelopers/effective-state-management-for-textfield-in-compose-d6e5b070fbe5).  Once these changes had been applied the fields responsiveness improved dramatically.  
 

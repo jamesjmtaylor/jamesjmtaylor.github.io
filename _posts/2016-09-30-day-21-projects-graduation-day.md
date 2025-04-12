@@ -1,6 +1,7 @@
 ---
 title: Day 21-Projects & Graduation Day
 date: 2016-09-30T05:44:06-07:00
+tags: coding-bootcamp
 ---
 ![Day 21](/assets/day21.jpg)
 

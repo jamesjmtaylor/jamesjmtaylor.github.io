@@ -1,12 +1,13 @@
 ---
 title: Real-World Applications of Leetcode
 date: '2023-10-03T06:42:34-07:00'
+tags: algorithms 
 ---
 ![Call For Fire](/assets/cff.jpg)
 
 As I've been grinding through LeetCode problems I've been reminded of some of the real-world applications of the algorithms used during my past life as an Army officer.  The "Call For Fire" (CFF) is one such example.  
 
-A CFF is a radio request for artillery fire and is performed by a Forward Observer (FO) using a map, compass, protractor, binoculars with reticle pattern, and a target.  Before contacting the artillery battery, the FO makes their best guess with regards to the location of the target on their map.  They can do this either by determining their location using a GPS and the direction to the target using a compass and then estimating the distance, or by using terrain association.  In the latter method,  you associate the targets proximity to prominent terrain, i.e. they are 500 meters west of hill 505. 
+A CFF is a radio request for artillery fire and is performed by a Forward Observer (FO) using a map, compass, protractor, binoculars with reticle pattern, and a target.  Before contacting the artillery battery, the FO makes their best guess with regards to the location of the target on their map.  They can do this either by determining their location using a GPS and the direction to the target using a compass and then estimating the distance, or by using terrain association.  In the latter method,  you associate the targets proximity to prominent terrain, i.e. they are 500 meters west of hill 505.
 
 Once an estimate of the target location is made, the FO sends the initial CFF request.  This can be done in one of two ways: grid or polar.  For the purposes of this description we'll assume we're using grid.  The request sounds something like this:
 

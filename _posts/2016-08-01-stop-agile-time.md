@@ -1,6 +1,7 @@
 ---
 date: 2016-08-01T20:04:40.407Z
 title: Stop! Agile Time!
+tags: life
 ---
 
 It’s the first Monday of the week, which means it’s time for Agile! Major features implemented last month and not yet
@@ -15,7 +16,7 @@ mentioned include:
 
 I know this doesn’t seem like much for a month’s worth of work, but July was pretty hectic overall.  We did just move
 across the country and I’ve been averaging about a job interview a day since being up here. I’ll talk more about that
-process in next week’s post. 
+process in next week’s post.
 
 Planned features for the following month include:
 

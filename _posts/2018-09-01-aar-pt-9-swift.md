@@ -1,12 +1,13 @@
 ---
 title: AAR pt 9 (Swift)
 date: '2018-09-01T06:00:16-07:00'
+tags: aar swift
 ---
 ![Swift](/assets/swift.jpg)
 
 If you haven’t had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a>
 
-It's been exactly a year since I did <a href="/post/aar-pt-4-swift-xcode/">my last Swift/iOS AAR entry</a>, and two years since I <a href="/post/day-1-ios-fundamentals/">started the Coding Dojo Swift bootcamp</a> so I figured it was about time that I had a new entry on my lessons learned with Swift.  I've got a few more entries in my notebook that I haven't been able to transcribe into a digital format yet, but you'll probably find this to be a lot to digest as it is; so without further adieu: 
+It's been exactly a year since I did <a href="/post/aar-pt-4-swift-xcode/">my last Swift/iOS AAR entry</a>, and two years since I <a href="/post/day-1-ios-fundamentals/">started the Coding Dojo Swift bootcamp</a> so I figured it was about time that I had a new entry on my lessons learned with Swift.  I've got a few more entries in my notebook that I haven't been able to transcribe into a digital format yet, but you'll probably find this to be a lot to digest as it is; so without further adieu:
 
 * Apple's recomendation is that you use .pngs for image assets, not vector drawables (pdfs).  You can read more about their recommendation at <a href="https://developer.apple.com/library/content/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/LoadingImages/LoadingImages.htm">https://developer.apple.com/library/content/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/LoadingImages/LoadingImages.html</a>.
 * You can declare a delegate protocol in the same file as the class that uses.  Java will not allow you to do this, but Kotlin will.
@@ -63,4 +64,3 @@ It's been exactly a year since I did <a href="/post/aar-pt-4-swift-xcode/">my la
 * ScrollViews automatically add padding to their content in order to make room for the scrollbar.  You can hide the scrollbar inset by adjusting constraints to a setting larger than the superview. In iOS 9 scrollInsets are handled differently than iOS 10 and 11.  The solution is to set `self.autoAdjustScrollViewInsets = false` in viewDidLoad().
 * If you ever want to implement custom segue animations see WWDC13-"Custom View Controller Animations"
 * You can write swift extensions for InterfaceBuilder attributes of widgets in the storyboard.  They'll even show in the attributes pane of the Storyboard editor.  Changes won't reflect in the storyboard, but they will display at runtime.  An example of such an extension would be the addition of a kerning attribute for UILabels.
-*

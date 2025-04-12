@@ -1,6 +1,7 @@
 ---
 title: Information Theory in IoT (Part 1)
 date: '2020-09-01T08:08:00-07:00'
+tags: information-theory
 ---
 ![Claude Shannon](/assets/shannon.jpg)
 
@@ -12,7 +13,7 @@ At Nautilus our hardware stores past workouts until they can be transferred to t
 
 Before we go any further I'd like to define some terms.  In information theory the concept of "entropy" represents uncertainty.  "Information" is the resolution of that entropy.   Information is transmitted through a channel as a "signal".  A channel can consist of a number of transmission mediums, from radio waves, to sound waves, to fiber-optic cables.  Regardless of the medium however there will always be some degree of "noise" (hence the common-enough phrase "noise-to-signal ratio").  Noise is garbage data that is injected into the channel through various phenomena.  
 
-At Nautilus it's not uncommon to have electromagnetic noise, especially from treadmill motors.  That's because those motors use and radiate a lot of electromagnetic energy while under the load of propelling a user backward so that they don't run off the front of the machine.   Our treadmills, just like the rest of our connected exercise equipment, are considered "Internet of Things" (IoT) devices because they connect to the internet (albeit indirectly through a user's phone). They do this in order to persist a user's workouts in the user's digital exercise journal. 
+At Nautilus it's not uncommon to have electromagnetic noise, especially from treadmill motors.  That's because those motors use and radiate a lot of electromagnetic energy while under the load of propelling a user backward so that they don't run off the front of the machine.   Our treadmills, just like the rest of our connected exercise equipment, are considered "Internet of Things" (IoT) devices because they connect to the internet (albeit indirectly through a user's phone). They do this in order to persist a user's workouts in the user's digital exercise journal.
 
 ![Model 216 Treadmill](/assets/216.jpg)
 

@@ -1,6 +1,7 @@
 ---
 title: Day 9-Frameworks
 date: 2016-09-15T12:13:50.000Z
+tags: coding-bootcamp
 ---
 ![Day 9](/assets/day9.jpg)
 

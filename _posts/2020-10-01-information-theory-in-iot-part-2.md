@@ -1,6 +1,7 @@
 ---
 title: Information Theory in IoT (Part 2)
 date: '2020-10-01T09:19:50-07:00'
+tags: information-theory
 ---
 ![Huffman](/assets/huffman.jpg)
 

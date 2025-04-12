@@ -1,6 +1,7 @@
 ---
 title: Leetcode Grinding
 date: '2023-08-05T07:07:15-07:00'
+tags: algorithms 
 ---
 ![Skateboard Grind](/assets/grind.png)
 

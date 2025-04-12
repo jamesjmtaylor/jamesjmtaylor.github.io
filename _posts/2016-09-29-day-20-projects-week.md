@@ -1,6 +1,7 @@
 ---
 title: Day 20-Projects Week
 date: 2016-09-29T05:42:59-07:00
+tags: coding-bootcamp
 ---
 ![Day 20](/assets/day20.jpg)
 

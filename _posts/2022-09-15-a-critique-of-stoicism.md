@@ -1,6 +1,7 @@
 ---
 title: A Critique of Stoicism
 date: '2022-09-15T11:47:20-07:00'
+tags: philosophy life
 ---
 ![Zeno the Stoic](/assets/zeno.jpg)
 
@@ -12,9 +13,9 @@ Prior to becoming involved in the Mazamas, I had a fairly stoic outlook on life.
 
 For most of my life stoicism served me well.  It allowed me to shed negativity and be a positive influence on those around me.  That changed during my mountaineering team's attempt on Middle Sister.  I was the first to reach the planned location for our base camp, at 9,300 feet.  I started work carving a shelf out of the glacier for our tent in high spirits.  I then went on to boil and filter water for the team.  It was about this time that I developed a headache and severe nausea.  I was torn between either stoically soldiering on or disclosing my symptoms to the climb leader.  When one of the other climbers went down with AMS (Acute Mountain Sickness) I knew I couldn't keep it to myself anymore.  I was advised to try to eat something, which I did and then promptly vomited up. Our team ultimately ended up retreating from the approach.  
 
-I felt terrible.  A few days later I received the following feedback from my instructors: "You were feeling like crap on Middle Sister— but still helped make water for the team. We noticed this behavior— thanks for helping out, but also remember to take care of yourself— you can’t help others if you are personally compromised. You’ve got to be communicative about how you’re feeling ... stoicism doesn’t count for much in the high alpine." 
+I felt terrible.  A few days later I received the following feedback from my instructors: "You were feeling like crap on Middle Sister— but still helped make water for the team. We noticed this behavior— thanks for helping out, but also remember to take care of yourself— you can’t help others if you are personally compromised. You’ve got to be communicative about how you’re feeling ... stoicism doesn’t count for much in the high alpine."
 
-Wim Hof, another stoic, made a much more ambitious mountaineering attempt, seeking to summit Mount Everest.  For those unfamiliar, Wim Hof is famous for his extreme ability to control his metabolism and for his stoicism in cold environments.  Unfortunately, his attempt also ended in failure.  When asked about his retreat, he had this to say: 
+Wim Hof, another stoic, made a much more ambitious mountaineering attempt, seeking to summit Mount Everest.  For those unfamiliar, Wim Hof is famous for his extreme ability to control his metabolism and for his stoicism in cold environments.  Unfortunately, his attempt also ended in failure.  When asked about his retreat, he had this to say:
 
 “So I had a deep mental conversation with my foot, and it reported frostbite. I appreciated it was the right thing to turn back; extreme cold is a teacher. The lessons come to you through the body. You just listen."
 

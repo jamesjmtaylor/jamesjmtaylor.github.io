@@ -1,6 +1,7 @@
 ---
 title: FiTness Machine Service (FTMS)
 date: '2020-03-01T08:50:00-08:00'
+tags: android kotlin ble
 ---
 ![BLE](/assets/ble.png)
 
@@ -14,12 +15,11 @@ The maximum number of bytes transmitted in a single transmission is determined b
 
 Most of the values you receive will be represented by unsigned integers.  This is because by re-purposing the sign bit at the front you can double the magnitude of the possible values.  When a property must be capable of representing negative values however, it will be transmitted using a signed integer.  When you have signed integers, you should evaluate the value at the byte boundary.  This is illustrated in the diagram below for feature X:
 
-
 ![Bits & Bytes](/assets/bitbyte.png)
 
 For the purposes of this example Feature X uses two bytes.  The first is signed, the second is not.  When decoding the ByteArray you must make sure to account for the mixture of signed and unsigned bytes. The code below illustrates how this might be accomplished in Kotlin using Kotlin's experimental unsigned types.  Java, for reference, does not support unsigned types.
 
-```
+```kotlin
 @ExperimentalUnsignedTypes
 fun convertBytesAndFeaturesToCharacteristics(bytes: ByteArray, flags: List<INDOOR_BIKE_DATA_FLAGS>):Characteristic{
     var currentByteIndex = 2 //First two bytes are used for flags.
@@ -38,7 +38,7 @@ fun convertBytesAndFeaturesToCharacteristics(bytes: ByteArray, flags: List<INDOO
 
 This function relies on the functions below to convert between Bytearrays:
 
-```
+```kotlin
 fun ByteArray.toInt(): Int {
        val numBits = this.size * 8
        return BitSet.valueOf(this).toInt(numBits)
@@ -47,7 +47,7 @@ fun ByteArray.toInt(): Int {
 
 and BitSets:
 
-```
+```kotlin
 fun BitSet.toInt(numBits : Int ): Int {
     var value = 0
     var isNegative = false
@@ -62,7 +62,7 @@ fun BitSet.toInt(numBits : Int ): Int {
 
 Kotlin specifically also has the experimental unsigned ByteArray.  To convert this to an integer the following custom function is used:
 
-```
+```kotlin
 @ExperimentalUnsignedTypes
 fun UByteArray.toInt(): Int {
     var result : UInt = 0u

@@ -1,12 +1,13 @@
 ---
 title: Subscription Management
 date: '2019-07-01T07:53:56-07:00'
+tags: ios android
 ---
 While working at Nautilus I've had to do a fair amount of subscription management on both iOS and Android platforms.  Each platform has its nuances and gotchas, so I figured I would write a blog post detailing the processes for implementing and testing both.
 
 ## iOS
 
-iOS Subscriptions are controlled through Apple App Store Connect. 
+iOS Subscriptions are controlled through Apple App Store Connect.
 
 **_Subscription Creation & Management_**
 
@@ -15,7 +16,7 @@ To modify subscription pricing select **View all Subscription Pricing** under th
 
 ![iOS Subscriptions](/assets/iosSub0.png)
 
-In the **Subscription Prices** tab of the new screen select** Starting Price** below the Current Prices title:
+In the **Subscription Prices** tab of the new screen select **Starting Price** below the Current Prices title:
 
 ![iOS Subscriptions](/assets/iosSub1.png)
 
@@ -39,15 +40,15 @@ To test international pricing you must change the Country/Region of the Sandbox 
 
 ![iOS Subscriptions](/assets/iosSub5.jpeg)
 
-1. Launch **Settings **from your Home screen.
-2. Tap on** iTunes & App Store**.
+1. Launch **Settings** from your Home screen.
+2. Tap on **iTunes & App Store**.
 3. Tap on **Apple ID**.
 4. Authenticate with Password or Touch ID, if required.
 5. Tap on **Country/Region**.
 6. Tap on **Change Country or Region**.
 7. Choose a new country or region.
 8. Tap on **Next**.
-9. Tap on **Agree **to consent to the terms and conditions.
+9. Tap on **Agree** to consent to the terms and conditions.
 10. Enter your payment details.
 11. Enter your billing information.
 12. Tap **Next**. You will now be set up in your new country and ready to go.
@@ -60,7 +61,7 @@ Android Subscriptions are controlled through the Google Play Console.
 
 **_Subscription Creation & Management_**
 
-Subscriptions can be viewed, created, and modified by selecting the relevant app, navigating to** Store Presence** in the left drawer and selecting** In-app products**. From there you can select **Subscriptions **in the top navigation bar.  
+Subscriptions can be viewed, created, and modified by selecting the relevant app, navigating to **Store Presence** in the left drawer and selecting **In-app products**. From there you can select **Subscriptions** in the top navigation bar.  
 You may need to setup a merchant account before the screen is available.  You will also need to add billing permissions to your APK, otherwise the you will receive the screen below:
 
 ![Android Subscriptions](/assets/aosSub0.png)
@@ -77,4 +78,4 @@ Testing of subscriptions should be done from within an internal build of a stagi
 
 Attempting to download the app from an alternative source (i.e. HockeyApp) will prevent the app from resolving the Google Play in-app purchase SKUs.
 
-Once the tester has opted into the testing program by opening the internal testing Google Play link and has downloaded the app they can test purchasing subscriptions in the same manner that they would in the production version of the app. [ Full instructions for testing Google Play Billing can be found here](https://developer.android.com/google/play/billing/billing_testing#test-purchases-sandbox). Note that Google Play will resolve aliased addresses as belonging to the same Google Play account, preventing aliased subscription testing.  Google Play also does not currently support mocking international test accounts.  The best means around this is to create a Google account while using a proxy server that is configured for the country that you want to mock.  You can then set your country as desired by following [Google's guidance on changing your Google Play country](https://support.google.com/googleplay/answer/7431675?hl=en).  Your country can only be changed once per year, so you will need to create a new account for each country.  Each account will also need to be retroactively added to the Einstein Testers group.
+Once the tester has opted into the testing program by opening the internal testing Google Play link and has downloaded the app they can test purchasing subscriptions in the same manner that they would in the production version of the app. [Full instructions for testing Google Play Billing can be found here](https://developer.android.com/google/play/billing/billing_testing#test-purchases-sandbox). Note that Google Play will resolve aliased addresses as belonging to the same Google Play account, preventing aliased subscription testing.  Google Play also does not currently support mocking international test accounts.  The best means around this is to create a Google account while using a proxy server that is configured for the country that you want to mock.  You can then set your country as desired by following [Google's guidance on changing your Google Play country](https://support.google.com/googleplay/answer/7431675?hl=en).  Your country can only be changed once per year, so you will need to create a new account for each country.  Each account will also need to be retroactively added to the Einstein Testers group.

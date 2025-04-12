@@ -1,6 +1,7 @@
 ---
 title: Day 2-Intro to iOS
 date: 2016-09-08T11:47:26.000Z
+tags: coding-bootcamp
 ---
 ![Day 2](/assets/day2.jpg)
 

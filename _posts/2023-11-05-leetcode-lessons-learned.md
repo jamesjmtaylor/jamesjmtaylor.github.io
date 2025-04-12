@@ -1,6 +1,7 @@
 ---
 title: Leetcode Lessons Learned
 date: '2023-11-05T08:03:34-08:00'
+tags: kotlin algorithms
 ---
 As I've been working my way through Leetcode I've picked up a few new tricks.  Some of these are fairly standard, like the sliding window technique for array analysis, but others are somewhat less intuitive.  I gained a number of insights through experimentation, and these may be specific to the Kotlin compilers for Leetcode in particular. I figured they would still be worth mentioning in any case.
 

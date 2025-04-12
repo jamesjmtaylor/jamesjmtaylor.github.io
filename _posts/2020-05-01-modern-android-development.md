@@ -1,6 +1,7 @@
 ---
 title: Modern Android Development
 date: '2020-05-01T07:24:00-07:00'
+tags: android
 ---
 ![Modern](/assets/modern.jpg)
 
@@ -10,7 +11,7 @@ ViewModels in particular are practically indispensable for android development. 
 
 Kotlin coroutines have also largely superseded AsyncTasks.  To use coroutines you must include the kotlinX gradle dependency. For coroutines you can use either "async { ... }" which returns a deferred async task", or launch { ... }", which does not.  You should not pass in the backing data structure to an asynchronous call however. For maximum thread safety you should use immutable objects and replace the original object instead of modifying it.
 
-At Nautilus we’ve made a point to keep the code as modern as possible,  but it’s very much a “brown-field” project. The sheer size of the App (248,660 lines of code when I started two years ago!) has meant that we’ve had to keep changes to the original paradigms to a minimum.  To avoid unintentional drift we use the 3rd party plugin "Save Actions" to optimize our imports automatically on save, maintain indent uniformity, and support consistent code formatting in general.    
+At Nautilus we’ve made a point to keep the code as modern as possible,  but it’s very much a “brown-field” project. The sheer size of the App (248,660 lines of code when I started two years ago!) has meant that we’ve had to keep changes to the original paradigms to a minimum.  To avoid unintentional drift we use the 3rd party plugin "Save Actions" to optimize our imports automatically on save, maintain indent uniformity, and support consistent code formatting in general.
 
 One of the transitions we made early on at Nautilus was to use Timber for logging. Timber is now preferred over the vanilla Log function call. This is because Timber auto-grabs the class name for the TAG and by default does not log in production. The only catch is that you must “plant” the Timber instance in your Application Singleton.  The use of tags allows you to filter out repetitive debugger messages with exclusionary regexes in Android Studio.
 

@@ -1,6 +1,7 @@
 ---
 title: Lessons Learned at Q5id
 date: '2022-05-04T16:14:35-07:00'
+tags: android ios xamarin c#
 ---
 ![Xamarin](/assets/xamarin.png)
 
@@ -17,4 +18,4 @@ You can bind Android and iOS 3rd-party dependencies into your Xamarin project. D
 
  When debugging you can output to the console in C# (with string interpolation) by using the following format: \`Debug.WriteLine($"New date {0}", args.NewDate.ToString());\`.  This can be used to evaluate expressions in a similar fashion to XCodes \`po\` statement, or Android Studio's evaluate expression dialogue.  This last tip was particularly useful for me as was learning the ropes for Xamarin.  
 
-To summarize, after nearly a year of working with Xamarin I found it to be particularly good for sharing code with between iOS and Android on simple CRUD (Create, READ, Update, Destroy) applications.  I found that the more advanced your use case became however (AI, ML, Augmented Reality, IoT, wearables, etc.), the less well suited it was.  Microsoft did their best to provide escape hatches for these use cases through custom native library bindings, but I found many of the more nuanced aspects of this process to be undocumented and only resolved through meticulous trial and error.  It is for good reason that seasoned .NET developers call this the "dark art" of binding.  Next month we'll take an in-depth look at the Kotlin equivalent of Xamarin, Kotlin Multiplatform Mobile (KMM).
+To summarize, after nearly a year of working with Xamarin I found it to be particularly good for sharing code with between iOS and Android on simple CRUD (Create, READ, Update, Destroy) applications.  I found that the more advanced your use case became however (AI, ML, Augmented Reality, IoT, wearables, etc.), the less well suited it was.  Microsoft did their best to provide escape hatches for these use cases through custom native library bindings, but I found many of the more nuanced aspects of this process to be undocumented and only resolved through meticulous trial and error.  It is for good reason that seasoned .NET developers call this the "dark art" of binding.  Next month we'll take an in-depth look at the Kotlin equivalent of Xamarin, Kotlin Multiplatform (KMP).

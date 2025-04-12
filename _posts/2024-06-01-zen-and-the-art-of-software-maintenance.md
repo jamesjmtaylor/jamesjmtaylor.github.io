@@ -1,6 +1,7 @@
 ---
 title: Zen and the Art of Software Maintenance
 date: '2024-06-01T06:03:21-07:00'
+tags: software-engineering philosophy
 ---
 ![Zen Mountain](/assets/zenmountain.jpg)
 

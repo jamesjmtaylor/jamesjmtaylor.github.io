@@ -1,6 +1,7 @@
 ---
 title: Day 14-Hackathon
 date: 2016-09-21T12:32:27.000Z
+tags: coding-bootcamp
 ---
 ![Day 14](/assets/day14.jpg)
 

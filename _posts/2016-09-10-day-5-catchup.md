@@ -1,6 +1,7 @@
 ---
 title: Day 5-Catchup
 date: 2016-09-10T05:04:32-07:00
+tags: coding-bootcamp
 ---
 ![Day 5](/assets/day5.jpg)
 

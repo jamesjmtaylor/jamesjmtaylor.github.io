@@ -1,6 +1,7 @@
 ---
 title: StarCraft Rust Bot
 date: '2023-03-05T08:01:13-08:00'
+tags: rust
 ---
 ![StarCraft 2 logo](/assets/sc2.jpg)
 

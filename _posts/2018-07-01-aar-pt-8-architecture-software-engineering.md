@@ -1,6 +1,7 @@
 ---
 title: AAR pt 8 (Architecture/Software Engineering)
 date: '2018-07-01T07:08:20-07:00'
+tags: software-engineering aar android
 ---
 ![Android architecture](/assets/architecture.jpg)
 
@@ -17,7 +18,7 @@ A lot of software development is more general than the idiosyncrasies of this fr
 
 1. Go through the functionality
 2. Show and describe the code
-3. Go through the unit tests 
+3. Go through the unit tests
 4. Address any remaining questions
 
 * The "Rule of 30" is that there should be no more than 30 lines per method, 30 methods per class, 30 classes per module, etc.  This reduces complexity and overall bug density.
@@ -25,7 +26,7 @@ A lot of software development is more general than the idiosyncrasies of this fr
 * Their are two ways to organize projects, package by layer (i.e. ViewControllers, Views, etc.) and package by feature (i.e. Login section, Tab 1 section, etc).  The former is easier starting out since there's no question where different filetypes go.  The latter is easier for long term projects though because new developers (or old, returning developers) won't have as many questions as to where to find the files to implement a new feature.
 * A Bloom Filter is a Hashmap of Bools intended to track if a value exists in a Database or Network call.  Each value in the database or network is hashed with 3 different hashes and then the value is marked as true at each of the hash indexes.  Then for lookup if you get 3 trues the value MAY be in the database or network.  But any less than that and the value definitely isn't in the database or network.  This solution is more space efficient than a POJO hashmap and more time efficient than querying the database or network each and every time.  The larger the bloom array the more certainty that the object queried is actually present.  
 * The "copy-left" moniker refers to licences that force you to open-source your code if you use that licensed library.
-* Kerning refers to the space between a pair of specific letters and hails back to the printing press when letters would have angles cut out of their blocks so they could nest better with other letters, the characters 'AV' being one example.  Letter spacing on the other hand refers to the spacing between all letters. 
+* Kerning refers to the space between a pair of specific letters and hails back to the printing press when letters would have angles cut out of their blocks so they could nest better with other letters, the characters 'AV' being one example.  Letter spacing on the other hand refers to the spacing between all letters.
 * There are 3 main Timezone encodings: Windows (i.e "Pacific Standard Time") IANA (i.e. "America/San-Francisco"), and offset (i.e. "+0800")
 * Hungarian notation is just prefixing variables with a lower-case letter.  Examples include s for singleton (i.e. "sInstance") m for main (i.e. "mVar").  
 * The key to reactive programming is "Push, don't pull". For example, VMs shouldn't have getters, just an update() method that pushes a static state to it's observers.

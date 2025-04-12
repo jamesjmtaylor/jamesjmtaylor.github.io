@@ -1,6 +1,7 @@
 ---
 title: Vibe Check
 date: '2024-11-21T08:47:42-08:00'
+tags: politics
 ---
 ![Vibe check post](/assets/vibecheck.png)
 

@@ -1,6 +1,7 @@
 ---
 title: Plans within Plans
 date: 2016-11-21T20:04:40.407Z
+tags: life
 ---
 ![Scheming alien](/assets/plans.jpg)
 

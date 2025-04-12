@@ -1,6 +1,7 @@
 ---
 title: Rust - Initial Impressions
 date: '2023-02-04T06:31:14-08:00'
+tags: rust
 ---
 ![Robot Crab](/assets/krabs.jpg)
 

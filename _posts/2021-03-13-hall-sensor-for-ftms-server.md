@@ -1,6 +1,7 @@
 ---
 title: Hall Sensor FTMS Server
 date: '2021-03-13T10:36:24-08:00'
+tags: ble
 ---
 ![Hall Sensor](/assets/hall.gif)
 
@@ -12,23 +13,23 @@ There are few different ways that I could have processed the hall sensor signal.
 
 Another approach is to use Arduino's TIMG API to set an interrupt for your pin.  TIMG will contain the number of clock ticks since the last interrupt and clear the ticks after the interrupt has occurred. When using interrupt service routines, you need to make sure that you lock the memory for variables both in the ISR and the loop().  If the memory location is accessed in two places at once it will throw a runtime exception.  To lock the memory you need to declare a mux variable like below:
 
-```
+```c
 portMUX_TYPE revMux = portMUX_INITIALIZER_UNLOCKED;
 ```
 
 and then lock using
 
-```
+```c
 portENTER_CRITICAL_ISR(&revMux);
 ```
 
  and unlock using
 
-```
+```c
  portEXIT_CRITICAL_ISR(&revMux);
 ```
 
-I ultimately decided against this approach for the same reason as the first; the signal was just too noisy to use without receiving a lot of false positives. 
+I ultimately decided against this approach for the same reason as the first; the signal was just too noisy to use without receiving a lot of false positives.
 
 I had to look up the meaning of the "\&" operator shown above because it's not normally used in higher-level languages like Swift and Kotlin.  Its purpose is to retrieve the actual memory address of a prefixed variable. The "\*" operator is similar in that it provides a pointer to a variable's memory address.  A pointer provides an additional layer of safety above direct memory address access in that they can be set to null.  This prevents you from accessing unallocated or garbage memory. In C and C++ programming you can accidently corrupt memory, causing undefined behavior when accessing other, unrelated variables.  The best way to troubleshoot these issues is by using a _[memory profiler like this.](http://www.secretlabs.de/projects/memprof/)_  Speaking of memory, both C and C++ by default are pass-by-value, not pass by reference like a lot of higher level languages.  I filched an diagram of pass-by-value from the excellent Java blog [Dzone](https://dzone.com/articles/pass-by-value-vs-reference-in-java), shown below:
 
@@ -44,7 +45,7 @@ Neither C or C++ have the concept of Bytes or Byte Arrays.  Instead you should u
 
 If you write your own bit reversal algorithm, the most efficient means in terms of memory and speed is to to use a nibble lookup table.  It is O(1) lookup time, but only occupies a lookup array of 4 bits for each of the 16 indexes, for a total of 8 bytes.  I've included an example below:
 
-```
+```log
 /*lookup reverse of bottom nibble
   |       + grab bottom nibble
   |       |        + move bottom result into top nibble
@@ -64,7 +65,7 @@ byte reverseBits(byte n)
 
 If you're using bits to indicate flags you will need to reverse the bit and byte order before transmitting. For actual numerical values you only need to reverse the the byte order.  If you don't expect to interpret the bytes on the ESP32, you can just encode the bytes in big-endian order with no issue however.  This saves compute time because it means you don't have to reverse the bytes before transmitting.  When it comes to actually transmitting the values as bytes I found the following logic extraordinarily useful:
 
-```
+```c
 uint16_t transmittedKph     = (uint16_t) (kph * 100);         //(0.01 resolution)
 byte bikeData[2]={(uint8_t)transmittedKph, (uint8_t)(transmittedKph >> 8)}
 ```

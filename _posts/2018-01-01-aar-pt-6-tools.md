@@ -1,6 +1,7 @@
 ---
 title: AAR pt 6 (Tools)
 date: 2018-01-01T05:48:17-08:00
+tags: software-engineering aar
 ---
 ![Toolbelt](/assets/toolbelt.jpeg)
 

@@ -1,12 +1,14 @@
 ﻿---
 title: AAR pt 10 (Android)
 date: '2018-12-01T08:56:22-08:00'
+
+tags: aar android kotlin
 ---
 ![Android developers banner](/assets/developers.png)
 
-If you have not had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a> 
+If you have not had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a>
 
-It's been a little over a  year since I did <a href="/post/aar-pt-5-android/">my last Android AAR entry</a>, so I figured it was about time that I had a new entry on my lessons learned with Android and Kotlin.  
+It's been a little over a year since I did <a href="/post/aar-pt-5-android/">my last Android AAR entry</a>, so I figured it was about time that I had a new entry on my lessons learned with Android and Kotlin.  
 
 * To add adb to the path (adb controls android debugging):
 
@@ -14,9 +16,9 @@ It's been a little over a  year since I did <a href="/post/aar-pt-5-android/">my
 2. "vim .bash_profile"
 3. paste "export PATH=$PATH:/Users/jtaylor/Library/Android/sdk/platforms"
 
-* To restart adb from the terminal (if/when logcat crashes) 
+* To restart adb from the terminal (if/when logcat crashes)
 
-1. "adb kill-server" 
+1. "adb kill-server"
 2. "adb start-server"
 
 * You can run android unit tests from the terminal with "./gradlew clean test"
@@ -26,15 +28,13 @@ It's been a little over a  year since I did <a href="/post/aar-pt-5-android/">my
 * In Android Studio, holding ALT while dragging your selection enables a column style selection.
 * You can only lock orientation for specific activities, not the entire app.  Each activity's orientation can be specified in the manifest
 * ALWAYS use Glide for image download/editing/caching/etc.  
-* 
 
 ViewModels must never call View methods directly.  This is because Views are typically fragments and activities and are created and destroyed at will, leading to possible null pointer exceptions if called directly.
 
 * You can press ALT+F8 in the variables window during debugging to bring up the expression evaluater.
-* To calculate view size at runtime 
+* To calculate view size at runtime:
 
-
-```
+```kotlin
 myView.measure(0,0); myView.getMeasuredWidth() / myView.getDisplayMetrics.density
 ```
 

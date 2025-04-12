@@ -1,6 +1,7 @@
 ---
 title: Chicago Trip
 date: '2019-03-01T13:00:38-08:00'
+tags: life
 ---
 ![Slalom](/assets/slalom.jpg)
 

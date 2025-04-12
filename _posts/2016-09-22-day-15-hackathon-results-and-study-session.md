@@ -1,6 +1,7 @@
 ---
 title: Day 15-Hackathon Results and Study Session
 date: 2016-09-22T05:34:13-07:00
+tags: coding-bootcamp
 ---
 ![Day 15](/assets/day15.jpg)
 

@@ -1,6 +1,7 @@
 ---
 title: Artificial Intelligence
 date: '2018-08-01T07:04:00-07:00'
+tags: ai
 ---
 ![Mechanical Turk](/assets/turk.jpg)
 

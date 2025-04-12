@@ -1,6 +1,7 @@
 ---
 title: One IDE to Rule them All
 date: 2018-02-01T05:05:46-08:00
+tags: software-engineering
 ---
 ![One Ring](/assets/onering.jpg)
 

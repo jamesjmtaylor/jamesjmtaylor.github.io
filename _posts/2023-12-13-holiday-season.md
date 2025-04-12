@@ -1,6 +1,7 @@
 ---
 title: Holiday Season
 date: '2023-12-13T06:59:09-08:00'
+tags: life
 ---
 ![Turkey](/assets/turkey.jpg)
 

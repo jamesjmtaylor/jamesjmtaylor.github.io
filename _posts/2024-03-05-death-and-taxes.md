@@ -1,6 +1,7 @@
 ---
 title: Death and Taxes
 date: '2024-03-05T07:04:18-08:00'
+tags: life
 ---
 ![Tax forms](/assets/taxes.jpg)
 

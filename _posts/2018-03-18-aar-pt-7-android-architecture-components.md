@@ -1,6 +1,7 @@
 ---
 title: AAR pt 7 (Android Architecture Components)
 date: '2018-03-18T06:15:05-07:00'
+tags: android kotlin aar
 ---
 ![Model-View-ViewModel](/assets/mvvm.jpg)
 
@@ -17,7 +18,7 @@ The Google ViewModel is a superclass that all declared ViewModels must implement
 
 **build.gradle (app)**
 
-```
+```groovy
 dependencies {
     implementation "android.arch.lifecycle:extensions:1.1.0" // ViewModel and LiveData
     annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
@@ -35,7 +36,7 @@ Once both the project and app build.gradle files are modified you can import the
 
 **EquipmentViewModel**
 
-```
+```kotlin
 class EquipmentViewModel(application: Application) : AndroidViewModel(application), LifecycleObserver {
     val repo = EquipmentRepository()
     val equipment = MediatorLiveData<List<Equipment>>() //Mediator allows this class to pass the RoomLiveData from the repo class to the View
@@ -55,13 +56,14 @@ class EquipmentViewModel(application: Application) : AndroidViewModel(applicatio
             }
         }
     }
+}
 ```
 
 When implementing an MVVM architecture you can have your view model class implement either ViewModel or ViewModelAndroid. ViewModelAndroid requires that you pass an Application instance to its constructor, but in exchange it now has a reference to the application singleton. That means that you can query the application in order to get a reference to the application database (as long as you have a reference to the database in the application, which you should). The ViewModel itself can either be instantiated by the activity or the fragment relying on the ViewModel.  Below is an example of the latter:
 
 **EquipmentFragment**
 
-```
+```kotlin
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         columnCount = calculateNoOfColumns(App.instance.applicationContext)
@@ -81,7 +83,7 @@ To have a fragment receive the same instance of ViewModel as your activity you n
 
 NOTE: Since the ViewModel outlives specific activity and fragment instantiations, it should never reference a View, or any class that may hold a reference to the activity context.  This is where the observer pattern is necessary through LiveData.  By having the View subscribe to the ViewModel and call ViewModel functions for the application of business logic, you avoid the ViewModel knowing anything about the View.
 
-Now for some Kotlin lessons learned: 
+Now for some Kotlin lessons learned:
 
 Kotlin offers a Java interoperable language that offers a lot of Swift features including: type inference with var (same as Swift 'var') and vals ('let'), optionals ('?'), forced unwrapping ('!!'), extensions, DSLs, and DataObjects (which are similar to swift structs).
 
@@ -94,34 +96,35 @@ Kotlin offers a Java interoperable language that offers a lot of Swift features 
 
 **let keyword**
 
-`findUser(id)?.let {
+```kotlin
+findUser(id)?.let {
  return it.name
- }`
+ }
+ ```
 
 The Kotlin equivalent of the Swift \`guard let\` statement takes the following format ( the unwrappedString variable is available for use immediately following unwrapping).  Note that this function makes use of the 'Elvis operator' ('?:') which is similar to Swift's default value operator ('??') except that it can execute functions as well as return values.
 
 **guard let statement**
 
-```
+```kotlin
 val nullSafeString : String? = "Cool string"
 val unwrappedString = nullSafeString ?: return
 ```
 
-The Kotlin documentation recommends solving most of the needs for static functions with package-level functions. They are simply declared outside a class in a source code file. Then you can call them anywhere and auto-import the function in Android Studio by pressing ALT+ENTER when the function is underlined.
- "Kotlin has “class” for classes that have multiple instances, and “object” for singletons.
+The Kotlin documentation recommends solving most of the needs for static functions with package-level functions. They are simply declared outside a class in a source code file. Then you can call them anywhere and auto-import the function in Android Studio by pressing ALT+ENTER when the function is underlined. "Kotlin has “class” for classes that have multiple instances, and “object” for singletons.
  A “companion object” is an extension of the concept of “object”: an object that is a companion to a particular class, and thus has access to it’s private level methods and properties.
  Sometimes in Java you need to create anonymous inner class instances.  OnClickListener is an excellent, oft used example of this. Kotlin slightly generalizes this concept with object expressions and object declarations.  
 
 ## Kotlin Gotchas
 
-The elvis operator is last in the order of operations, which means that any operations after it will be considered part of the elvis operation unless you use parentheses.  For example, if the wrappedInt below stores the integer 3 
+The elvis operator is last in the order of operations, which means that any operations after it will be considered part of the elvis operation unless you use parentheses.  For example, if the wrappedInt below stores the integer 3:
 
-```
+```kotlin
 unwrappedIntPlusFive = wrappedInt ?: 5 + 5
 ```
 
 unwrappedIntPlusFive will actually evaluate to 3, not 8.  To executed the order of operations as intended you would need to use the expression below:
 
-```
+```kotlin
 unwrappedIntPlusFive = (wrappedInt ?: 5) + 5
 ```
