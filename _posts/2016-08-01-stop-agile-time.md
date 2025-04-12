@@ -9,7 +9,7 @@ mentioned include:
 
 1. Finalize the blog page! (long)
 2. Re-learn the rules to the game of life (John Conway’s game of life, not Hasbro’s) (short)
-3. Look into participating in a Seattle Code Retreat.  This was mentioned on Software Engineering radio. 
+3. Look into participating in a Seattle Code Retreat.  This was mentioned on Software Engineering radio.
  Unfortunately Seattle hasn’t had one since 2014 and isn’t set to have one for the foreseeable future (short).
 4. Complete Lynda.com courses on Apache Cordova and Phonegap (long).
 5. Install home security system (medium)

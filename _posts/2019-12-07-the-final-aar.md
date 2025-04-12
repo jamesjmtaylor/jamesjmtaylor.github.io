@@ -5,7 +5,7 @@ tags: aar ios
 ---
 ![And now for something completely different](/assets/different.jpg)
 
-If you haven’t had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a>.  
+If you haven’t had a chance to read the first entry in the series for context, <a href="/after-action-review-aar/">you can do so here</a>.  
 
 For the past couple years I've been doing an AAR (After Action Report) every other month.  This was for several reasons: it helped me synthesize what I had learned over the past few months, it documented what I had personally struggled with, and the material was readily available (I jot down notes everyday).  But having gone back and read through my past AAR blog entries I came to a realization.  The posts aren't terribly fun or compelling to read.  For one, they're repetitive.   They start with the same vanilla reference back to the original entry and end with a list of dry bullet points.  They can also be somewhat esoteric, given the complete lack of context for each bullet point.  
 

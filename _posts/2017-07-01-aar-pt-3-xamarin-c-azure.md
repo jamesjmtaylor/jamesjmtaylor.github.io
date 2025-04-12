@@ -3,7 +3,7 @@ title: 'AAR pt 3 (Xamarin/C#/Azure)'
 date: 2017-07-01T11:58:08.000Z
 tags: xamarin c# web aar
 ---
-If you haven't had a chance to read the first entry in the series for context, [you can do so here](/post/after-action-review-aar/). We do a fair amount of .NET development over at Steelcase.  When I first joined the mobile development team we seriously considered doing our mobile applications in Xamarin.  We eventually decided against it since Steelcase is a very heavily design driven company, and Xamarin just wouldn't provide the flexibility that a purely native approach does.  But in the spirit of giving Xamarin a fair shake we spent a sprint working in it to get an idea of it's capabilities.  Below are the lessons I learned, as well as some I've come to learn after working with Steelcase's C#/Azure backend.
+If you haven't had a chance to read the first entry in the series for context, [you can do so here](/after-action-review-aar/). We do a fair amount of .NET development over at Steelcase.  When I first joined the mobile development team we seriously considered doing our mobile applications in Xamarin.  We eventually decided against it since Steelcase is a very heavily design driven company, and Xamarin just wouldn't provide the flexibility that a purely native approach does.  But in the spirit of giving Xamarin a fair shake we spent a sprint working in it to get an idea of it's capabilities.  Below are the lessons I learned, as well as some I've come to learn after working with Steelcase's C#/Azure backend.
 
 * To issue adb commands in Xamarin Studio go to the menu bar and select **Tools** > **SDK Command Prompts.**
 * To find a package name right click the project and select **options**> **Android Applications** > **Package Name.**

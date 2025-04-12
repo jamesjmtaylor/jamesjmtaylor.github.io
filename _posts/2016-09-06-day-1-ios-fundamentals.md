@@ -7,13 +7,13 @@ tags: coding-bootcamp
 
 Timeline:
 
-* 0800-Arrive, realize from overhearing other students that there was an email sent out this weekend that asked us to complete 50% of the fundamentals course.  Rush through the online learning platform modules until instruction starts. <br/>
-* 0900-Our instructor, David, takes 30 minutes for the class to introduce themselves, and another 30 minutes to go over the basics of Swift.<br/>
+* 0800-Arrive, realize from overhearing other students that there was an email sent out this weekend that asked us to complete 50% of the fundamentals course.  Rush through the online learning platform modules until instruction starts. 
+* 0900-Our instructor, David, takes 30 minutes for the class to introduce themselves, and another 30 minutes to go over the basics of Swift.
 * 1000-We’re set loose to continue to work on the Swift fundamentals online modules.
-* 1100-All work in the class is brought to a halt to work on algorithms.  David covers O(n) notation and the comparative speeds of different sorts.  We then breakout into groups of two and are told to implement an insertion sort.<br/>
-* 1200-The class is released for lunch.  I walk across the street to the Tully’s coffee shop for a small medium roast and come back to the Dojo to continue working on the modules.<br/>
-* 1530-David calls the group back in to discuss one of the assignments in the module.  He specifically covers the difference between structs and classes in Swift (classes are pass-by-reference and support inheritance, structs are pass-by-value and do not support inheritance) which is critical to completing the assignment.<br/>
-* 1700-David covers the homework that is due before we start tomorrow.  About half the class leaves and the other half continues to work on the day’s assignments.<br/>
+* 1100-All work in the class is brought to a halt to work on algorithms.  David covers O(n) notation and the comparative speeds of different sorts.  We then breakout into groups of two and are told to implement an insertion sort.
+* 1200-The class is released for lunch.  I walk across the street to the Tully’s coffee shop for a small medium roast and come back to the Dojo to continue working on the modules.
+* 1530-David calls the group back in to discuss one of the assignments in the module.  He specifically covers the difference between structs and classes in Swift (classes are pass-by-reference and support inheritance, structs are pass-by-value and do not support inheritance) which is critical to completing the assignment.
+* 1700-David covers the homework that is due before we start tomorrow.  About half the class leaves and the other half continues to work on the day’s assignments.
 * 2000-I go home for the night after working to get a little bit ahead on tomorrow’s modules.
 
 What I’ve learned: There are only a couple big differences that I’ve noticed between Android Java and iOS Swift so far. The first is the idea of structs, which I covered earlier.  Java simply doesn’t have structs.  Everything is a class.  The second thing is the idea of wrappers, which is Swift’s explicit means of checking against null values.  It’s somewhat annoying right now, but I’ve got the feeling that it’s going to be worthwhile down the road.

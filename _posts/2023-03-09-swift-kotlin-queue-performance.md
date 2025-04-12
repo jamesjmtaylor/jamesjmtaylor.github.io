@@ -7,8 +7,8 @@ tags: algorithms swift
 
 This is an expansion on two articles that I did about this time last year: 
 
-* <a href="/post/swift-hackerrank-part-1/">Swift & HackerRank (Part 1)</a>. 
-* <a href="/post/swift-hackerrank-part-2/">Swift & HackerRank (Part 2)</a>. 
+* <a href="/swift-hackerrank-part-1/">Swift & HackerRank (Part 1)</a>. 
+* <a href="/swift-hackerrank-part-2/">Swift & HackerRank (Part 2)</a>. 
 
 In those articles I marveled at how much faster Kotlin was compared to Swift in terms of queue performance.  While I quantified the performance in terms of order of magnitude at a specific volume (3 orders of magnitude better performance for 1,000 enqueues and dequeues) what I failed to do was generalize the differences in terms of [Big-O notation](https://en.wikipedia.org/wiki/Time_complexity).  That's something I plan to remedy in this blog post.
 

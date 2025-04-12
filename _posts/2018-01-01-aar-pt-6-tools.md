@@ -5,7 +5,7 @@ tags: software-engineering aar
 ---
 ![Toolbelt](/assets/toolbelt.jpeg)
 
-If you haven't had a chance to read the first entry in the series for context, [you can do so here](/post/after-action-review-aar/).
+If you haven't had a chance to read the first entry in the series for context, [you can do so here](/after-action-review-aar/).
 
 Over the course of a professional career you tend to acquire a lot of tools, regardless of the industry.  I wanted to list some of my favorites in this blog entry, as well as some of my lessons learned from each.  I'll go into greater detail for each in the future, but for now I'll just cover some of my major takeaways from each.
 

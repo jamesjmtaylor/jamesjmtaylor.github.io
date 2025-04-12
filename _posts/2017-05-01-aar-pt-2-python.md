@@ -5,7 +5,7 @@ tags: aar python
 ---
 ![Python programming language](/assets/python.jpg)
 
- If you haven't had a chance to read the first entry in the series  for context, [you can do so here](/post/after-action-review-aar/).  In this post I'll be covering my most important lessons learned from everyone's favorite language, Python.  I'll also have some React.js and React-Redux at the end, since the majority of these lessons learned were made while I was on-boarding with a full-stack web developer.
+ If you haven't had a chance to read the first entry in the series  for context, [you can do so here](/after-action-review-aar/).  In this post I'll be covering my most important lessons learned from everyone's favorite language, Python.  I'll also have some React.js and React-Redux at the end, since the majority of these lessons learned were made while I was on-boarding with a full-stack web developer.
 
 * You can run python2 and python3 side-by-side, just need to differentiate calls by appending a '3' to calls to the python3 tools (i.e. "python3" vs. "python" or "pip3" vs. "pip"
 * You can install required dependancies in a project after a git clone by running 'pip install -r YOURREQDOC.txt"

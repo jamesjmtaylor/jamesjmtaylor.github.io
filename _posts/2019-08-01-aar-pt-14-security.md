@@ -5,9 +5,9 @@ tags: aar software-engineering
 ---
 ![Security](/assets/security.jpg)
 
-If you have not had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a>
+If you have not had a chance to read the first entry in the series for context, <a href="/after-action-review-aar/">you can do so here</a>
 
-This first part of this post will focus on security specifically.  The second half will cover lessons learned with software tools in general, in a similar vein to <a href="/post/aar-pt-11-tools/">my last Tools AAR entry</a>.
+This first part of this post will focus on security specifically.  The second half will cover lessons learned with software tools in general, in a similar vein to <a href="/aar-pt-11-tools/">my last Tools AAR entry</a>.
 
 ## Security
 

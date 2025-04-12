@@ -5,7 +5,7 @@ tags: swift aar
 ---
 ![XCode](/assets/xcode.jpg)
 
-If you haven't had a chance to read the first entry in the series for context, [you can do so here](/post/after-action-review-aar/). Given that my work is primarily based around development of the client applications, I'm going to have an outsized quantity of iOS and Android lessons learned compared to the other stacks.  I'll do as well as I can to stagger them with other languages and tools (for example, the preceding entries on Python, React, and C#), but will probably eventually have a few back-to-back entries of iOS and Android.  So, without further adieu, Swift & Xcode tips!
+If you haven't had a chance to read the first entry in the series for context, [you can do so here](/after-action-review-aar/). Given that my work is primarily based around development of the client applications, I'm going to have an outsized quantity of iOS and Android lessons learned compared to the other stacks.  I'll do as well as I can to stagger them with other languages and tools (for example, the preceding entries on Python, React, and C#), but will probably eventually have a few back-to-back entries of iOS and Android.  So, without further adieu, Swift & Xcode tips!
 
 * In order to measure startup time, click the app name by the play button, **Edit scheme** > **Run** > **Arguments** > **Environment Variables** > **DYLD_PRINT_STATISTICS**.  Make sure it's a fresh simulator instance each time.
 * `.description` in swift and ObjectiveC is the same as .toString in Java

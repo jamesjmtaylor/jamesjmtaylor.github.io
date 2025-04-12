@@ -5,7 +5,7 @@ tags: android kotlin aar
 ---
 ![Model-View-ViewModel](/assets/mvvm.jpg)
 
-If you haven’t had a chance to read the first entry in the series for context, <a href="/post/after-action-review-aar/">you can do so here</a>
+If you haven’t had a chance to read the first entry in the series for context,[you can do so here](/after-action-review-aar/)
 
 Way back in 2017 at Google I/O several architectural components were announced to help streamline Android development.  Kotlin support was also announced.  I've only just recently been able to get around to doing an app that implements both simultaneously.  I've included some of my lessons learned below:
 
