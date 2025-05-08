@@ -5,7 +5,7 @@ tags: android
 ---
 ![Rooted](/assets/rooted.jpg)
 
-I recently had to verify that a piece of security software correctly identified an android device as rooted.  That of course begs the question, how do configure a device to be "rooted"? The instructions and software vary by device, but if you're just trying to confirm the detection of a device's rooted status the easiest method is to root an Android Studio emulator.  This is because there are no manufacturer-specific safeguards to prevent you from rooting the emulator, and you don't have to worry about irrevocably corrupting actual hardware during the rooting process.  So without further preamble, the instructions!
+I recently had to verify that a piece of security software correctly identified an android device as rooted.  This of course raises the question, "how do you configure a device to be "rooted"?" The instructions and software vary by device, but if you're just trying to confirm the detection of a device's rooted status, the easiest method is to root an Android Studio emulator.  This is because there are no manufacturer-specific safeguards to prevent you from rooting the emulator and you don't have to worry about irrevocably corrupting actual hardware during the rooting process.  So without further preamble, the instructions!
 
 In order to root your emulator, you'll need to download the following softare:
 
@@ -45,7 +45,7 @@ A: Emulator
 B: Assorted Commands to verify the next step(s) are ready
 C. rootAVD
 
-If you haven't already, download Magisk and rootAVD from the begining of this post. Unzip the rootAVD .zip file. Relocate the folder to a more permanent location if desired. From Terminal A or B, run the command "emulator -list-avds". You should see the names of all the emulators you've created in Android Studio:
+If you haven't already, download Magisk and rootAVD as seen above. Unzip the rootAVD .zip file. Relocate the folder to a more permanent location if desired. From Terminal A or B, run the command "emulator -list-avds". You should see the names of all the emulators you've created in Android Studio:
 
 ![Step 2](/assets/root2.png)
 
@@ -65,7 +65,7 @@ In Terminal B, confirm that adb is in Path and can connect to your running emula
 
 ![Step 6](/assets/root6.png)
 
-In Terminal C, navigate to the folder that you extracted the contents of rootAVD.zip to. Still in Terminal C, confirm that rootAVD runs and detects your emulators by executing "./rootAVD.sh ListAllAVDs". You should see a list of lines describing your emulators, and the commands you would run to root them (which you can copy/paste).
+In Terminal C, navigate to the folder where you saved the contents of rootAVD.zip. Still in Terminal C, confirm that rootAVD runs and detects your emulators by executing "./rootAVD.sh ListAllAVDs". You should see a list of lines describing your emulators and the commands you would run to root them (which you can copy/paste).
 
 ![Step 7](/assets/root7.png)
 
@@ -103,4 +103,3 @@ Once the device has restarted, open Magisk. If the "Superuser" tab is no longer 
 ![Step 10](/assets/root10.png)
 
 Photo by <a href="https://unsplash.com/@deedeedss?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">DeeDee Wang</a> on <a href="https://unsplash.com/photos/grayscale-photo-of-tree-roots-3Ck1ppnf-6c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-      
