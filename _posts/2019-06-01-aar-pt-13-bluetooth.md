@@ -5,7 +5,7 @@ tags: ble android aar
 ---
 ![Bluetooth icon](/assets/bluetooth-icon.png)
 
-If you have not had a chance to read the first entry in the series for context, <a href="/after-action-review-aar/">you can do so here</a>
+If you have not had a chance to read the first entry in the series for context, [you can do so here](/after-action-review-aar/).
 
 Since I've been at Nautilus I've had to work with Bluetooth and the Internet of Things more closely than I have in any other point in my career.  To make sure that I could speak at least somewhat cogently about the topics I've done a fair amount of study into both.  This post focuses on my learnings about Bluetooth specifically.
 
