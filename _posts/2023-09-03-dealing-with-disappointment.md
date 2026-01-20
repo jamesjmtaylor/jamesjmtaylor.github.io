@@ -1,7 +1,7 @@
 ---
 title: Dealing with Disappointment
 date: '2023-09-03T11:35:32-07:00'
-tags: life
+tags: life mazamas
 ---
 ![Disappointment](/assets/disappointment.png)
 

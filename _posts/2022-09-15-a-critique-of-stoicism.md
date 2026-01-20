@@ -1,7 +1,7 @@
 ---
 title: A Critique of Stoicism
 date: '2022-09-15T11:47:20-07:00'
-tags: philosophy life
+tags: philosophy life mazamas
 ---
 ![Zeno the Stoic](/assets/zeno.jpg)
 

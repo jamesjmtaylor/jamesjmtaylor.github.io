@@ -1,7 +1,7 @@
 ---
 title: Postgraduate Education
 date: '2024-12-04T08:11:57-08:00'
-tags: life
+tags: life mazamas
 ---
 ![Oregon State University logo](/assets/osu.png)
 
