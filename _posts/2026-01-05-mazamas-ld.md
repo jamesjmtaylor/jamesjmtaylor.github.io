@@ -1,6 +1,6 @@
 ---
 title: Mazamas Leadership Development
-date: '2025-12-08T12:00:00-08:00'
+date: '2026-01-05T12:00:00-08:00'
 tags: life mazamas
 ---
 ![LD Program](/assets/ldprogram.jpg)
