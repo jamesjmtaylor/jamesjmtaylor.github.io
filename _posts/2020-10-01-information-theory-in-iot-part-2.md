@@ -5,7 +5,7 @@ tags: information-theory
 ---
 ![Huffman](/assets/huffman.jpg)
 
-This is the second part in the Information Theory in IoT series and will discuss converting natural data into independent and identically distributed (IID) values as well as Huffman encoding.  The photograph is of of David A. Huffman, developer of Huffman Encoding.  Before we get into Huffman encoding though we need to discuss making the data IID.
+This is the second part in the Information Theory in IoT series and will discuss converting natural data into independent and identically distributed (IID) values as well as Huffman encoding.  The photograph is of David A. Huffman, developer of Huffman Encoding.  Before we get into Huffman encoding though we need to discuss making the data IID.
 
 In this article we'll address the compression of a single metric, calories per minute.  At Nautilus this metric is colloquially called "Burn Rate".  I chose burn rate because of the importance of that particular metric has in our flagship mobile app, JRNY. 
 
@@ -20,7 +20,7 @@ The 30 values above, stored as 16 bit integers, normally occupy  480 bits of spa
 
 The Huffman encoding algorithm involves taking values from a set of data and assigning each value a leaf in a binary tree.  To maximize the data savings, the most common values are placed closer to the root node of a tree.   The simplest rules for generating a Huffman tree use a priority queue for assigning leaf locations, with lowest probability nodes given highest priority.  In a queue, FIFO (first in, first out) priority is applied.  But in a priority queue this rule is only used for breaking ties in priority.  In our example the highest priority is a tie between the values 3 & 6, so those values would be added to the front of the queue.  Once the queue is populated the following rules are applied.
 
-![Huffman encoding](/assets/Huffman_coding_visualisation.png)
+![Huffman encoding](/assets/huffmanEncoding.png)
 
 1. Create a leaf node for each symbol and add it to the priority queue.
 2. While there is more than one node in the queue:
@@ -31,7 +31,7 @@ The Huffman encoding algorithm involves taking values from a set of data and ass
    * Repeat until there are no nodes remaining in the priority queue
 3. The remaining node is the root node and the tree is complete.
 
-![Huffman tree](/assets/huffman_br_tree.png)
+![Huffman tree](/assets/huffmanTree.png)
 
 This algorithm is visually depicted above, while the application of those rules is depicted to the left.  Each digit is shown as an alternating red or blue set of bits to assist with visually parsing the data.  The total number of bits is 71.  Adding the 16 bits for the unsigned integer encoding of the initial burn rate value, the application of IID and Huffman encoding has reduced the number of bits from our initial 480 bits to only 87 compressed bits, for a reduction in size of 82%.  Another way to look at it is that with 30 integer values represented by 71 bits, each value requires only 2.36 binary digits to be represented, as opposed to the 16 bits of the original, uncompressed encoding.
 

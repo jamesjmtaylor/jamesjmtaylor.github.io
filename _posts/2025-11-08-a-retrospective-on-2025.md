@@ -21,7 +21,7 @@ For 2026 I have the following goals:
 
 I've informally read 24 books for 2024 and 25 books for 2025.  I figure I might as well make it a running new years resolution.  I've been keeping track of the books read [here](https://docs.google.com/spreadsheets/d/1TjrlQqMzMsOfFgIzb5NVem1HLiTY4qbxFV1keE0U9_8/edit?usp=sharing) if you want to follow along.
 
-I completed Programming Languages for my first course at Oregon State University and will start Computer Architecture in January. The three other courses will be determined by what's on offer in the OSU course catalogue for those three succeeding quarters. 
+I completed Programming Languages for my first course at Oregon State University and will start Computer Architecture in January. The three other courses will be determined by what's on offer in the OSU course catalogue for those three succeeding quarters.
 
 For the LD Program I plan to pursue certification for leading "C" level climbs.  This would allow me to lead climbs on almost all the mountains that I could want to, to include Mt. Olympus, Mt. Rainier, and Mt. Shasta.  The LD program is actually quite involved, so I plan to make a full write-up in a subsequent post.
 
